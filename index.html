@@ -3,57 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deployment Success</title>
+    <title>Deployment Successful</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom right, #4CAF50, #2E7D32);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            color: white;
+            color: #fff;
             text-align: center;
         }
 
         .container {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            transition: transform 0.3s;
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.5;
+        .container:hover {
+            transform: translateY(-10px);
         }
 
         .success-icon {
             font-size: 4em;
-            color: #FFD700;
+            color: #ffd700;
             margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #45a049;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="success-icon">✅</div>
+        <div class="success-icon">🎉</div>
         <h1>Deployment Successful!</h1>
-        <p>Your application has been successfully deployed using:</p>
+        <p>Your application is live with:</p>
         <ul>
             <li>CodePipeline</li>
             <li>CodeBuild</li>
             <li>EC2</li>
             <li>IAM Integration</li>
         </ul>
-        <p>Congratulations on your seamless CI/CD integration!</p>
+        <a href="#" class="btn">Go to Application</a>
     </div>
 </body>
 </html>
