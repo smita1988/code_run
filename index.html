@@ -1,37 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>AAR DEMO | AWS CLOUD DEPLOYMENT</title>
-  <style>
-    body {
-      color: #000080;
-      background-color: #FFFFFF;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-    }
-    
-    h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-    
-    h2 {
-      font-size: 200%;
-      font-weight: normal;
-      margin-bottom: 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #4CAF50, #2E7D32);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        .success-icon {
+            font-size: 4em;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-  <div align="center">
-    <img src="https://s3.ap-south-1.amazonaws.com/www.basava.com/aar_logo_final.png" style="max-width: 20%;">
-    <h1>Congratulations!!! </h1>
-      <h2>Welcome to AAR SOURCE| Ram Hemareddy</h2>
-    <h3>This application was deployed using AWS CodeDeploy.</h3>
-    <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
-  </div>
+    <div class="container">
+        <div class="success-icon">✅</div>
+        <h1>Deployment Successful!</h1>
+        <p>Your application has been successfully deployed using:</p>
+        <ul>
+            <li>CodePipeline</li>
+            <li>CodeBuild</li>
+            <li>EC2</li>
+            <li>IAM Integration</li>
+        </ul>
+        <p>Congratulations on your seamless CI/CD integration!</p>
+    </div>
 </body>
 </html>
-
